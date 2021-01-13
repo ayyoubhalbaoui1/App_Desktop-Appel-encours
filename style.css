@@ -1,0 +1,208 @@
+body {
+    color: #1a1a1a;
+    /*   System font stack */
+    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.6em;
+    text-align: center;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+}
+
+.bs-example {
+    margin: 20px;
+}
+
+#phonenobtn,
+#callbtn,
+#reloadbtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.phone-call {
+    width: 50px;
+    height: 50px;
+    left: 164px;
+    bottom: 634px;
+    background: #00ff62;
+    position: fixed;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 99;
+    display: inline-block;
+    line-height: 65px;
+}
+
+.phone-call:before {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: -15px;
+    left: -15px;
+    background-color: #00ff62;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    opacity: 0.6;
+    -webkit-animation: pulse 1s ease-out;
+    animation: pulse 1.8s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        -webkit-transform: scale(0.3);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(0.6);
+        opacity: .6;
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        opacity: .3;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(0.3);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.6);
+        opacity: .6;
+    }
+    75% {
+        transform: scale(0.9);
+        opacity: .3;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.modal-content {
+    width: 100%;
+}
+
+.form-control {
+    height: 32px;
+    width: 150px;
+    font-family: inherit;
+    font-size: 11pt;
+    box-shadow: 0 0 6px #999;
+}
+
+#wrapper {
+    background: transparent url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/seigaiha.png") repeat scroll 0% 0%;
+    font-weight: bold;
+    width: 600px;
+    height: 400px;
+    font-family: "Palatino";
+    margin: auto;
+    box-shadow: 0 0 6px #999, inset 0 0 7px #fff;
+    border-radius: 4px;
+    color: #000;
+}
+
+#dialWrapper {
+    width: 933px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+input[type="tel"] {
+    height: 32px;
+    width: 235px;
+    font-family: inherit;
+    font-size: 11pt;
+    box-shadow: 0 0 6px #999;
+}
+
+input[type="text"] {
+    height: 32px;
+    width: 271px;
+    font-family: inherit;
+    font-size: 11pt;
+    box-shadow: 0 0 6px #999;
+}
+
+label {
+    font-size: 13pt;
+    position: relative;
+    top: -30px;
+    left: 80px;
+}
+
+#dial {
+    width: 200px;
+    height: 200px;
+    border-collapse: collapse;
+    text-align: center;
+    visibility: hidden;
+    position: relative;
+    top: 88px;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    color: #000;
+    box-shadow: 0 0 6px #999;
+}
+
+.dialDigit {
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: rgba(0, 119, 255, 0.7);
+}
+
+.dialDigit:hover {
+    background-color: rgb(255, 228, 142);
+}
+
+.dialDigit:active {
+    background-color: #FF6478;
+}
+
+#dialIcon {
+    cursor: pointer;
+}
+
+h2,
+h4 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+
+h4 {
+    padding: 0;
+    font-style: italic;
+}

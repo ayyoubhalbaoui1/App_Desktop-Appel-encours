@@ -1,0 +1,13 @@
+{
+    "name": "electron-yakuza",
+    "version": "1.0.0",
+    "description": "electron working file",
+    "main": "app.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "kmr",
+    "dependencies": {
+        "electron": "^11.1.1"
+    }
+}
